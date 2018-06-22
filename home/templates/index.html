@@ -1,0 +1,548 @@
+{%extends "base.html" %}
+{% load staticfiles %}
+{% block title %} Online Election Management Application {% endblock %}
+{% block content %}
+{{form.media.js}}
+
+		<div class="mu-hero-overlay">
+			<div class="container">
+				<div class="mu-hero-area">
+
+					<!-- Start hero featured area -->
+					<div class="mu-hero-featured-area">
+						<!-- Start center Logo -->
+						<div class="mu-logo-area">
+							<!-- text based logo -->
+							<!-- <a class="mu-logo" >Vote </a> -->
+							
+							<!-- image based logo -->
+							 <a class="mu-logo"><img src='{% static "frontend/images/logo-2.jpg" alt="logo img" %}' ></a> 
+						</div>
+						<!-- End center Logo -->
+
+						<!-- sign up/login form -->
+
+
+						<!-- end of sign up -->
+
+						<div class="mu-hero-featured-content">
+
+							<h1>Welcome to Online Election Management Application  </h1>
+							
+							<p class="mu-event-date-line">FEDERAL GOVERNEMENT COLLEGE, KWALI, ABUJA, OLD STUDENTS, ASSOCIATION</p>
+
+					
+
+							<div class="mu-event-counter-area">
+								<h2>Current Voting Poll ends in ...</h2>
+								<div id="mu-event-counter">
+									
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- End hero featured area -->
+
+
+						
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
+	
+	<!-- Start main content -->
+	<main role="main">
+		<!-- Start About -->
+		<section id="mu-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-about-area">
+							<!-- Start Feature Content -->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="mu-about-left">
+										<img class="" src='{% static "frontend/images/about.jpg" %}'  alt="About Us">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mu-about-right">
+										<h2>About Our Old Student Association</h2>
+										<p>Federal Government College Kwali Old Students Association(FEDGOKOSA) is a non profit and non governmental organisation registered with the Corporate Affairs COmmission(CAC) on the 9th October 2009 with number CAC/IT/NO35123. It has a constitution governing its affairs and a leadership headed by the president of the National Executive Council. </p>
+										
+									</div>
+								</div>
+							</div>
+							<!-- End Feature Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About -->
+
+		<!-- Start Video -->
+		<!-- <section id="mu-video">
+			<div class="mu-video-overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="mu-video-area">
+								<h2>Watch Previous Event Video</h2>
+								<a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			Start Video content
+			<div class="mu-video-content">
+				<div class="mu-video-iframe-area">
+					<a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+					<iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			 End Video content -->
+<!-- 
+		</section>  -->
+		<!-- End Video -->
+
+		<!-- Start Schedule  -->
+		<section id="mu-schedule">
+			<div class="container">
+				<div class="row">
+					<div class="colo-md-12">
+						<div class="mu-schedule-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Contests</h2>
+								<p>FEDGOKOSA's focus is in carrying out activities,programs and providing services and facilitating goodwill all towards the development and advance pursuit of academic excellence at our Alma mater.</p>
+							</div>
+
+							<div class="mu-schedule-content-area">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs mu-schedule-menu" role="tablist">
+								    <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">1 Day / 19 Feb</a></li>
+								    <li role="presentation"><a href="#second-day" aria-controls="second-day" role="tab" data-toggle="tab">2 Day / 20 Feb</a></li>
+								    <li role="presentation"><a href="#third-day" aria-controls="third-day" role="tab" data-toggle="tab">3 Day / 21 Feb</a></li>
+								    
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content mu-schedule-content">
+								    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
+								    	<ul>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">ends 02/02/2018</p>
+								    				<h3>Best Captain Of the Year</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time">ends 03/03/2018</p>
+								    				<h3>Best Dressed of the Year 2006</h3>
+								    				<span>For Only 2006 Set</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time">ends 04/04/2018</p>
+								    				<h3>Best Confident</h3>
+								    				<span>For Only 1998 Set</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time">ends 05/05/2018</p>
+								    				<h3>Best Runner of the Year</h3>
+								    				<span>For Only 2015 Set</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">ends 06/06/2018</p>
+								    				<h3>King/Queen of the Year</h3>
+								    			</div>
+								    		</li>
+								    	</ul>
+								    </div>
+								    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="second-day">
+								    	<ul>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">ends 06/07/2018</p>
+								    				<h3>Staff of the Year</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time">ends 06/08/2018</p>
+								    				<h3>Mascot of the Year</h3>
+								    				<span>For 1992 Set</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time"></p>
+								    				<h3>Best Work with Confidence</h3>
+								    				<span>For 1992 Set</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time">ends 06/03/2018</p>
+								    				<h3>Best Cofident of the Year</h3>
+								    				<span>For 2014 Set</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">ends 06/07/2018</p>
+								    				<h3>For 2014 Set</h3>
+								    			</div>
+								    		</li>
+								    	</ul>
+								    </div>
+								    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="third-day">
+								    	<ul>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">ends 06/07/2018</p>
+								    				<h3>Best of the year</h3>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time">ends 06/07/2018</p>
+								    				<h3>Best of the Year</h3>
+								    				<span>For 2017 Set</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time">ends 06/07/2018</p>
+								    				<h3>Best presenter of the year</h3>
+								    				<span>For 2005 Set Only</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="assets/images/logo.jpg" alt="event speaker">
+								    				<p class="mu-event-time">ends 06/07/2018</p>
+								    				<h3>Best Keynote Address</h3>
+								    				<span>For 2007 Set</span>
+								    			</div>
+								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<p class="mu-event-time">ends 06/07/2018</p>
+								    				<h3>Best Staff of the Year</h3>
+								    			</div>
+								    		</li>
+								    	</ul>
+								    </div>
+								    
+								</div>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Schedule -->
+
+		<!-- Start Speakers -->
+		<section id="mu-speakers">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-speakers-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-title">Get To know Candidates</h2>
+								<p> The Management structure has various committees and a National Executive Working Committee comprising of representatives of each graduated set from FGC Kwali.</p>
+							</div>
+
+							<!-- Start Speakers Content -->
+							<div class="mu-speakers-content">
+
+								<div class="mu-speakers-slider">
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/speaker.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>George Kunle</h3>
+											<p>George Kunle</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/speaker.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>Ngozi Kayode</h3>
+											<p>Business Consultant</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/speaker.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>Kayode Kayode</h3>
+											<p>Business Specialist</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/speaker.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>Yusuf Amina </h3>
+											<p>Digital Marketer</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/speaker.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>Karl Groves</h3>
+											<p>Digital Artist</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/speaker.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>Sarah Aminar</h3>
+											<p>Business Consultant</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/speaker.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>Ned Yusuf</h3>
+											<p>UI/UX Specialist</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+
+
+									<!-- Start single speaker -->
+									<div class="mu-single-speakers">
+										<img src="assets/images/speaker.jpg" alt="speaker img">
+										<div class="mu-single-speakers-info">
+											<h3>Michaela Yusuf </h3>
+											<p>Digital Marketer</p>
+											<ul class="mu-single-speakers-social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- End single speaker -->
+								</div>
+							</div>
+							<!-- End Speakers Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Speakers -->
+
+
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+
+		
+
+
+		<!-- Start Contact -->
+		<section id="mu-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-contact-area">
+
+							<div class="mu-title-area">
+								<h2 class="mu-heading-title">Contact Us</h2>
+								<p>We want to hear from you for feedback, send us an email</p>
+							</div>
+
+							<!-- Start Contact Content -->
+							<div class="mu-contact-content">
+								<div class="row">
+
+								<div class="col-md-12">
+									<div class="mu-contact-form-area">
+										<div id="form-messages"></div>
+											<form id="ajax-contact" method="post" action="#" class="mu-contact-form">
+												<div class="form-group">                
+													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+												</div>
+												<div class="form-group">                
+													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+												</div>              
+												<div class="form-group">
+													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+												</div> 
+												<button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
+								            </form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Contact Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact -->
+
+	</main>
+	
+	<!-- End main content -->
+
+
+
+
+ 
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+            	<form>
+                <p>You have to login before you can vote.  Enter your Unique Username and Password</p>
+
+                                    {% csrf_token %}
+                                             {{form.as_p}} 
+               
+            </div>
+             <div class="modal-body">
+               
+            </div>
+          
+            <div class="modal-footer">
+            	 <p class="text-warning"><small>Don't have an account? <a href="#" >Sign up. </a></small></p>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="signIn" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Sign Up</h4>
+            </div>
+            <div class="modal-body">
+                <p>Sign up here</p>
+               
+            </div>
+             <div class="modal-body">
+                <form></form>
+            </div>
+          
+            <div class="modal-footer">
+            	 <p class="text-warning"><small>Already have an Account? <a href="#" >Login </a></small></p>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+		
+			{% endblock %}
+			
+	
