@@ -496,8 +496,8 @@
             	<form>
                 <p>You have to login before you can vote.  Enter your Unique Username and Password</p>
 
-                                    {% csrf_token %}
-                                             {{form.as_p}} 
+                                    <!-- {% csrf_token %}
+                                             {{form.as_p}}  -->
                
             </div>
              <div class="modal-body">
@@ -516,7 +516,7 @@
 
 
 
-<div id="signIn" class="modal fade">
+<div id="#signUpModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -528,7 +528,7 @@
                
             </div>
              <div class="modal-body">
-                <form></form>
+               {% include 'home/reg_form.html' %}
             </div>
           
             <div class="modal-footer">

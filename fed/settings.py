@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'poll',
+  
     'home',
+    'poll',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -102,6 +104,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
+AUTH_USER_MODEL = 'home.User'
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -122,8 +127,21 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/static/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'static' + os.sep + 'media')
+STATIC_ROOT = os.path.join(BASE_DIR,'static' + os.sep + 'static')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,"static")
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+LOGIN_REDIRECT_URL = "/"
+
+LOGIN_URL = '/login/'
+
+
+EMAIL_HOST = "localhost"
+EMAIL_PORT = 1025
+
+# python -m smtpd -n -c DebuggingServer localhost:1025 
 
